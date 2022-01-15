@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity">
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开锁"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+        android:id="@+id/login_face"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="通过人脸开锁"
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <Button
+        android:id="@+id/open_putter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开推拉杆"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/login_face"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+        android:id="@+id/close_putter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关推拉杆"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/open_putter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/stop_putter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止推拉杆"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/close_putter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/start_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始报警"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/stop_putter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/stop_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止报警"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/start_alarm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/read_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="读取寄存器状态"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/stop_alarm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
