@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="30dp"
+    android:paddingBottom="20dp"
+    android:paddingHorizontal="50dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <TextView
+       android:id="@+id/dialog_title"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="一个简单的对话框"
+       android:textSize="@dimen/dialog_title_size"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"/>
+
+   <TextView
+       android:id="@+id/dialog_content"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="这是一个简单的对话框"
+       android:textSize="@dimen/dialog_content_size"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"/>
+
+   <TextView
+       android:id="@+id/dialog_negative"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="取消"
+       android:layout_marginTop="20dp"
+       android:textColor="@color/purple_500"
+       android:textSize="@dimen/dialog_negative_size"
+       android:padding="30dp"
+       android:layout_marginEnd="50dp"
+       android:layout_marginRight="50dp"
+       app:layout_constraintTop_toBottomOf="@+id/dialog_content"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"/>
+
+   <TextView
+       android:id="@+id/dialog_positive"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="确定"
+       android:layout_marginTop="20dp"
+       android:textColor="@color/purple_500"
+       android:textSize="@dimen/dialog_positive_size"
+       android:paddingVertical="30dp"
+       android:paddingStart="30dp"
+       android:paddingLeft="30dp"
+       android:gravity="center"
+       app:layout_constraintTop_toBottomOf="@+id/dialog_content"
+       app:layout_constraintEnd_toEndOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 参考链接: https://developer.android.google.cn/training/articles/security-config -->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <!-- 默认明文所有请求为明文请求,没有在 domain-config 中配置的选项都会使用该默认配置 -->
+                    <trust-anchors>
+                        <certificates src="system" overridePins="true" />
+                        <certificates src="user" overridePins="true" />
+                    </trust-anchors>
+<!--        <trust-anchors>&lt;!&ndash;添加信任的证书&ndash;&gt;-->
+<!--            <certificates src="system" />-->
+<!--        </trust-anchors>-->
+    </base-config>
+</network-security-config>

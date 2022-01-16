@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="5dp"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/color_010101"
+        android:text="资产盘点中"/>
+
+    <com.machine.serialport.view.ProgressRing
+        android:id="@+id/pr_progress"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:pr_bg_end_color="@color/bg_ring"
+        app:pr_bg_mid_color="@color/bg_ring"
+        app:pr_bg_start_color="@color/bg_ring"
+        app:pr_progress_end_color="#19bd9c"
+        app:pr_progress_start_color="#19bd9c"
+        app:pr_progress_width="10dp"
+        app:pr_progress="10"
+        tools:pr_progress="80"
+        tools:pr_show_text="60S"/>
+
+</LinearLayout>
